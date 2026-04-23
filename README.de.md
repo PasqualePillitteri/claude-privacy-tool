@@ -22,10 +22,10 @@ In anderen Sprachen lesen: [English](README.md) · [Italiano](README.it.md) · [
 ## Echtes Beispiel
 
 <p align="center">
-  <img src="claude-privacy-tool-example.png" alt="Claude Privacy Tool echtes Beispiel in Claude Code - Name und Datum durch Platzhalter ersetzt" width="100%">
+  <img src="claude-privacy-tool-example.png" alt="Claude Privacy Tool echtes Beispiel in Claude Code - Name durch Platzhalter ersetzt" width="100%">
 </p>
 
-Der Name "Pasquale Pillitteri"  werden durch `[PRIVATE_PERSON_1]` und `[PRIVATE_DATE_1]` ersetzt, bevor der Prompt Claude erreicht. Die Antwort kommt dank lokaler De-Anonymisierung mit den echten Werten zurück.
+Der Name "Pasquale Pillitteri" wird durch `[PRIVATE_PERSON_1]` ersetzt, bevor der Prompt Claude erreicht. Die Antwort kommt dank lokaler De-Anonymisierung mit dem echten Wert zurück.
 
 ## Installation (eine Zeile)
 

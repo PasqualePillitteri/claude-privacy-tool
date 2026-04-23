@@ -22,10 +22,10 @@ Claude Privacy Tool псевдонимизирует каждый запрос, 
 ## Реальный пример
 
 <p align="center">
-  <img src="claude-privacy-tool-example.png" alt="Claude Privacy Tool реальный пример в Claude Code - имя и дата заменены на placeholder" width="100%">
+  <img src="claude-privacy-tool-example.png" alt="Claude Privacy Tool реальный пример в Claude Code - имя заменено на placeholder" width="100%">
 </p>
 
-Имя "Pasquale Pillitteri"  заменяются на `[PRIVATE_PERSON_1]` и `[PRIVATE_DATE_1]` до того, как промпт попадёт в Claude. Ответ возвращается с реальными значениями благодаря локальной десанитизации.
+Имя "Pasquale Pillitteri" заменяется на `[PRIVATE_PERSON_1]` до того, как промпт попадёт в Claude. Ответ возвращается с реальным значением благодаря локальной десанитизации.
 
 ## Установка (одна строка)
 
