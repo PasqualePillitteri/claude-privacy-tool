@@ -18,6 +18,15 @@ Read in your language: [Italiano](README.it.md) · [Français](README.fr.md) · 
 
 ---
 
+
+## Real example
+
+<p align="center">
+  <img src="claude-privacy-tool-example.png" alt="Claude Privacy Tool real example in Claude Code - name and date replaced with placeholders" width="100%">
+</p>
+
+The name "Pasquale Pillitteri"  are replaced by `[PRIVATE_PERSON_1]` and `[PRIVATE_DATE_1]` before the prompt reaches Claude. The response comes back with the real values thanks to local de-sanitization.
+
 ## Install (one line)
 
 ```bash

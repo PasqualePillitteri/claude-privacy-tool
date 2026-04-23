@@ -18,6 +18,15 @@ Claude Privacy Tool 会对你发送给 **Claude Code CLI** 的每个提示词以
 
 ---
 
+
+## 真实示例
+
+<p align="center">
+  <img src="claude-privacy-tool-example.png" alt="Claude Privacy Tool 在 Claude Code 中的真实示例 - 姓名和日期被替换为占位符" width="100%">
+</p>
+
+姓名 "Pasquale Pillitteri"  在 prompt 到达 Claude 之前被替换为 `[PRIVATE_PERSON_1]` 和 `[PRIVATE_DATE_1]`。由于本地反假名化, 响应返回时带有真实值。
+
 ## 安装 (一行命令)
 
 ```bash

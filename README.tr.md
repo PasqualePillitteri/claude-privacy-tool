@@ -18,6 +18,15 @@ Diğer dillerde oku: [English](README.md) · [Italiano](README.it.md) · [Franç
 
 ---
 
+
+## Gerçek örnek
+
+<p align="center">
+  <img src="claude-privacy-tool-example.png" alt="Claude Privacy Tool Claude Code'da gerçek örnek - ad ve tarih placeholder'larla değiştirildi" width="100%">
+</p>
+
+"Pasquale Pillitteri" adı , prompt Claude'a ulaşmadan önce `[PRIVATE_PERSON_1]` ve `[PRIVATE_DATE_1]` ile değiştirilir. Yanıt, yerel desanitize sayesinde gerçek değerlerle geri döner.
+
 ## Kurulum (tek satır)
 
 ```bash

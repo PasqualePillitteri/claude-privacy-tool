@@ -18,6 +18,15 @@
 
 ---
 
+
+## 実例
+
+<p align="center">
+  <img src="claude-privacy-tool-example.png" alt="Claude Privacy Tool Claude Code での実例 - 名前と日付がプレースホルダーに置き換え" width="100%">
+</p>
+
+名前 "Pasquale Pillitteri"  は、プロンプトが Claude に到達する前に `[PRIVATE_PERSON_1]` と `[PRIVATE_DATE_1]` に置き換えられます。ローカル de-sanitize により、応答は実際の値で返ります。
+
 ## インストール(ワンライナー)
 
 ```bash
