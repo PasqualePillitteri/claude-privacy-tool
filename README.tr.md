@@ -8,6 +8,8 @@
 
 > 📖 **Blogda tam kılavuz:** [OpenAI Privacy Filter: kişisel verileri çevrimdışı maskeleyen ücretsiz açık kaynak model (GPU ve CPU)](https://pasqualepillitteri.it/tr/news/1355/openai-privacy-filter-kisisel-veri-maskeleme-offline-gpu-cpu)
 
+> 📦 **Bu araca adanmış makale:** [Claude Privacy Tool: Kişisel verileri Claude öncesi maskeleyen ücretsiz araç (Python + JavaScript)](https://pasqualepillitteri.it/tr/news/1365/claude-privacy-tool-hook-gizlilik-claude-code-desktop)
+
 > 🟨 **JavaScript / Node.js mı tercih ediyorsunuz?** Aynı araç, saf JS port (Python yok, venv yok): [claude-privacy-tool-js](https://github.com/pasqualepillitteri/claude-privacy-tool-js)
 
 Claude Privacy Tool, **Claude Code CLI**'ye gönderdiğiniz her istemi ve **Claude Desktop** tarafından yapılan her isteği takma adla korur. İsimler, e-postalar, telefonlar, adresler, IBAN'lar, API anahtarları ve tarihler, bilgisayarınızdan ayrılmadan önce `[PRIVATE_PERSON_1]` gibi yer tutucularla değiştirilir. Orijinal değerler yerel olarak `~/.claude/privacy-tool/mappings/` içinde kalır.

@@ -8,6 +8,8 @@
 
 > 📖 **Guía completa en el blog:** [OpenAI Privacy Filter: el modelo open-source gratuito que enmascara datos personales offline (GPU y CPU)](https://pasqualepillitteri.it/es/news/1353/openai-privacy-filter-enmascarado-datos-offline-gpu-cpu)
 
+> 📦 **Artículo dedicado a esta herramienta:** [Claude Privacy Tool: la herramienta gratuita que enmascara los datos personales antes de Claude (Python + JavaScript)](https://pasqualepillitteri.it/es/news/1363/claude-privacy-tool-hook-privacidad-claude-code-desktop)
+
 > 🟨 **¿Prefieres JavaScript / Node.js?** Misma herramienta, versión JS pura (sin Python, sin venv): [claude-privacy-tool-js](https://github.com/pasqualepillitteri/claude-privacy-tool-js)
 
 Claude Privacy Tool seudonimiza cada prompt que envías a **Claude Code CLI** y cada solicitud realizada por **Claude Desktop**. Nombres, correos, teléfonos, direcciones, IBAN, claves API y fechas se sustituyen por marcadores como `[PRIVATE_PERSON_1]` antes de salir de tu ordenador. Los valores originales permanecen en local en `~/.claude/privacy-tool/mappings/`.
