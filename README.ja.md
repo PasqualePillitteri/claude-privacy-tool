@@ -8,6 +8,8 @@
 
 > 📖 **ブログの完全ガイド:** [OpenAI Privacy Filter: 個人データをオフラインでマスクする無料オープンソースモデル (GPU と CPU)](https://pasqualepillitteri.it/news/1350/openai-privacy-filter-pii-masking-offline-gpu-cpu)
 
+> 🟨 **JavaScript / Node.js がお好みですか？** 同じツールの純粋 JS 版 (Python 不要、venv 不要): [claude-privacy-tool-js](https://github.com/pasqualepillitteri/claude-privacy-tool-js)
+
 **Claude Code CLI**と**Claude Desktop**の全リクエストを仮名化。氏名、メール、電話、住所、IBAN、APIキー、日付は送信前に`[PRIVATE_PERSON_1]`等へ置換。元値は`~/.claude/privacy-tool/mappings/`に保存。
 
 [OpenAI Privacy Filter](https://huggingface.co/openai/privacy-filter)(Apache 2.0、15億パラメータ)ベース。CPU/GPUで100%オフライン。
