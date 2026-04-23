@@ -6,7 +6,7 @@
 
 **一行命令安装. 在数据发送到 Claude 之前对其进行脱敏.**
 
-> 📖 **博客完整指南:** [OpenAI Privacy Filter: 免费开源模型，可离线屏蔽个人数据 (GPU 和 CPU)](https://pasqualepillitteri.it/news/1350/openai-privacy-filter-pii-masking-offline-gpu-cpu)
+> 📖 **博客完整指南:** [OpenAI Privacy Filter: 免费开源模型，可离线屏蔽个人数据 (GPU 和 CPU)](https://pasqualepillitteri.it/zh/news/1357/openai-privacy-filter-pingbi-geren-shuju-offline-gpu-cpu)
 
 > 🟨 **更喜欢 JavaScript / Node.js?** 相同的工具, 纯 JS 移植 (无 Python, 无 venv): [claude-privacy-tool-js](https://github.com/pasqualepillitteri/claude-privacy-tool-js)
 
@@ -128,4 +128,4 @@ MIT
 
 Pasquale Pillitteri [pasqualepillitteri.it](https://pasqualepillitteri.it)
 
-参考文章: [Guida OpenAI Privacy Filter](https://pasqualepillitteri.it/news/1350/openai-privacy-filter-pii-masking-offline-gpu-cpu)
+参考文章: [Guida OpenAI Privacy Filter](https://pasqualepillitteri.it/zh/news/1357/openai-privacy-filter-pingbi-geren-shuju-offline-gpu-cpu)

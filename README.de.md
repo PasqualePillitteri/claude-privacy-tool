@@ -6,7 +6,7 @@
 
 **Installation in einer Zeile. Maskiert personenbezogene Daten, bevor sie Claude erreichen.**
 
-> 📖 **Vollständige Anleitung im Blog:** [OpenAI Privacy Filter: das kostenlose Open-Source-Modell, das personenbezogene Daten offline maskiert (GPU und CPU)](https://pasqualepillitteri.it/news/1350/openai-privacy-filter-pii-masking-offline-gpu-cpu)
+> 📖 **Vollständige Anleitung im Blog:** [OpenAI Privacy Filter: das kostenlose Open-Source-Modell, das personenbezogene Daten offline maskiert (GPU und CPU)](https://pasqualepillitteri.it/de/news/1354/openai-privacy-filter-daten-maskierung-offline-gpu-cpu)
 
 > 🟨 **Bevorzugen Sie JavaScript / Node.js?** Dasselbe Tool, reine JS-Portierung (kein Python, kein venv): [claude-privacy-tool-js](https://github.com/pasqualepillitteri/claude-privacy-tool-js)
 
@@ -128,4 +128,4 @@ MIT
 
 Pasquale Pillitteri, [pasqualepillitteri.it](https://pasqualepillitteri.it)
 
-Referenzartikel: [Leitfaden OpenAI Privacy Filter](https://pasqualepillitteri.it/news/1350/openai-privacy-filter-pii-masking-offline-gpu-cpu)
+Referenzartikel: [Leitfaden OpenAI Privacy Filter](https://pasqualepillitteri.it/de/news/1354/openai-privacy-filter-daten-maskierung-offline-gpu-cpu)
