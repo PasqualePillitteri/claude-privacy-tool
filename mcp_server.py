@@ -52,9 +52,28 @@ def get_classifier():
     return _classifier
 
 
+def _merge_consecutive(entities: list[dict], max_gap: int = 1) -> list[dict]:
+    """Merge adjacent entities of the same group to fix aggregation_strategy='simple' glitches."""
+    if not entities:
+        return []
+    sorted_ents = sorted(entities, key=lambda e: e["start"])
+    merged: list[dict] = [dict(sorted_ents[0])]
+    for ent in sorted_ents[1:]:
+        last = merged[-1]
+        same_group = ent.get("entity_group") == last.get("entity_group")
+        if same_group and ent["start"] - last["end"] <= max_gap:
+            last["end"] = ent["end"]
+            last["score"] = max(last.get("score", 0), ent.get("score", 0))
+        else:
+            merged.append(dict(ent))
+    return merged
+
+
 def _sanitize_core(text: str) -> tuple[str, dict[str, str], dict[str, int]]:
     classifier = get_classifier()
-    entities = sorted(classifier(text), key=lambda e: e["start"], reverse=True)
+    raw = classifier(text)
+    entities = _merge_consecutive(raw, max_gap=1)
+    entities = sorted(entities, key=lambda e: e["start"], reverse=True)
 
     mapping: dict[str, str] = {}
     counters: dict[str, int] = {}

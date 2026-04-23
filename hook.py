@@ -42,9 +42,32 @@ def load_classifier():
     )
 
 
+def merge_consecutive(entities: list[dict], max_gap: int = 1) -> list[dict]:
+    """
+    Fix aggregation_strategy="simple" edge case where the last token of a span
+    is tagged slightly differently and breaks the entity in two adjacent pieces.
+    Merges entities of the same group whose boundaries touch (gap <= max_gap).
+    """
+    if not entities:
+        return []
+    sorted_ents = sorted(entities, key=lambda e: e["start"])
+    merged: list[dict] = [dict(sorted_ents[0])]
+    for ent in sorted_ents[1:]:
+        last = merged[-1]
+        same_group = ent.get("entity_group") == last.get("entity_group")
+        if same_group and ent["start"] - last["end"] <= max_gap:
+            last["end"] = ent["end"]
+            last["score"] = max(last.get("score", 0), ent.get("score", 0))
+        else:
+            merged.append(dict(ent))
+    return merged
+
+
 def sanitize(text: str) -> tuple[str, dict[str, str]]:
     classifier = load_classifier()
-    entities = sorted(classifier(text), key=lambda e: e["start"], reverse=True)
+    raw_entities = classifier(text)
+    entities = merge_consecutive(raw_entities, max_gap=1)
+    entities = sorted(entities, key=lambda e: e["start"], reverse=True)
 
     mapping: dict[str, str] = {}
     counters: dict[str, int] = {}
